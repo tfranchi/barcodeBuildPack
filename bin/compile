@@ -7,4 +7,4 @@ curl https://github.com/tfranchi/bardecoder/archive/master.zip -s -O -ssl3
 # make a directory to untar (like unzip) the binary
 mkdir -p vendor/bar
 # untar the binary to the directory we want
-unzip bardecoder-muster.zip -d vendor/bar
+unzip bardecoder-master.zip -d vendor/bar
