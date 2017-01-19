@@ -8,3 +8,5 @@ wget https://github.com/tfranchi/bardecoder/archive/master.zip
 mkdir -p vendor
 # untar the binary to the directory we want
 unzip master.zip -d vendor
+rm master.zip
+mv scanbarcode.jar /vendor/java
