@@ -2,14 +2,16 @@
 echo "-----> Installing bardecoder"
 # change to the the BUILD_DIR ($1)
 cd $1
-# download the binary (-O) silently (-s)
+# download the binary
 wget https://github.com/tfranchi/bardecoder/archive/master.zip
-# make a directory to untar (like unzip) the binary
+# make a directory to unzip the binary
 mkdir -p vendor
-# untar the binary to the directory we want
+# unzip the binary to the directory we want
 unzip master.zip -d vendor
 rm master.zip
-unzip scanbarcode.zip -d vendor/java
+unzip scanbarcode.zip -d vendor/bardecoder-master/java
 rm scanbarcode.zip
-chmod 777 vendor/java/scanbarcode.jar
+chmod 777 vendor/bardecoder-master/java/scanbarcode.jar
 mkdir vendor/tmp
+mkdir -p .heroku/vendor
+cp -avr vendor/bardecoder-master/lib .heroku/vendor
