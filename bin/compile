@@ -9,5 +9,7 @@ mkdir -p vendor
 # untar the binary to the directory we want
 unzip master.zip -d vendor
 rm master.zip
-mv scanbarcode.jar /vendor/java
+unzip scanbarcode.zip -d vendor/java
+rm scanbarcode.zip
+chmod 777 vendor/java/scanbarcode.jar
 mkdir vendor/tmp

@@ -10,3 +10,4 @@ mkdir -p vendor
 unzip master.zip -d vendor
 rm master.zip
 mv scanbarcode.jar /vendor/java
+mkdir vendor/tmp
