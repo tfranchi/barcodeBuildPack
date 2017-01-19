@@ -14,4 +14,4 @@ rm scanbarcode.zip
 chmod 777 vendor/bardecoder-master/java/scanbarcode.jar
 mkdir vendor/tmp
 mkdir -p .heroku/vendor
-cp -avr vendor/bardecoder-master/lib .heroku/vendor
+cp -avr vendor/bardecoder-master/build/ubuntu_12.10_x86_64/* .heroku/vendor
