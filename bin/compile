@@ -13,3 +13,9 @@ unzip scanbarcode.zip -d vendor/bardecoder-master/java
 rm scanbarcode.zip
 chmod 777 vendor/bardecoder-master/java/scanbarcode.jar
 mkdir vendor/tmp
+
+cd repo/com/octotelematics/lib/barcode
+unzip scanbarcode.zip
+mv libbardecode_jni.so lib
+mv libbardecode.so lib
+
