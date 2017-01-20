@@ -16,6 +16,7 @@ mkdir -p vendor/tmp
 
 cd repo/com/octotelematics/lib/barcode
 unzip scanbarcode.zip
+mkdir lib
 mv libbardecode_jni.so lib
 mv libbardecode.so lib
 
