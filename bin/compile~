@@ -14,9 +14,9 @@ cd $1
 #chmod 777 vendor/bardecoder-master/java/scanbarcode.jar
 mkdir -p vendor/tmp
 
-cd repo/com/octotelematics/lib/barcode
-unzip scanbarcode.zip
-mkdir lib
-mv libbardecode_jni.so lib
-mv libbardecode.so lib
+#cd repo/com/octotelematics/lib/barcode
+#unzip scanbarcode.zip
+#mkdir lib
+#mv libbardecode_jni.so lib
+#mv libbardecode.so lib
 
