@@ -3,16 +3,16 @@ echo "-----> Installing bardecoder"
 # change to the the BUILD_DIR ($1)
 cd $1
 # download the binary
-wget https://github.com/tfranchi/bardecoder/archive/master.zip
+#wget https://github.com/tfranchi/bardecoder/archive/master.zip
 # make a directory to unzip the binary
-mkdir -p vendor
+#mkdir -p vendor
 # unzip the binary to the directory we want
-unzip master.zip -d vendor
-rm master.zip
-unzip scanbarcode.zip -d vendor/bardecoder-master/java
-rm scanbarcode.zip
-chmod 777 vendor/bardecoder-master/java/scanbarcode.jar
-mkdir vendor/tmp
+#unzip master.zip -d vendor
+#rm master.zip
+#unzip scanbarcode.zip -d vendor/bardecoder-master/java
+#rm scanbarcode.zip
+#chmod 777 vendor/bardecoder-master/java/scanbarcode.jar
+mkdir -p vendor/tmp
 
 cd repo/com/octotelematics/lib/barcode
 unzip scanbarcode.zip
